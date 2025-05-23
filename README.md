@@ -58,4 +58,6 @@ DishChallenge は、日々の料理をただの作業から楽しみの時間へ
 
 ## 画面遷移図
 
-[Figma] (#https://www.figma.com/design/gTGn2sVYWR52Eu0nwMl2SG/%E7%84%A1%E9%A1%8C?node-id=0-1&t=yJcPNVzqNuhKlZkr-1)
+[Figma][]
+
+[Figma]: https://www.figma.com/design/gTGn2sVYWR52Eu0nwMl2SG/%E7%84%A1%E9%A1%8C?node-id=0-1&t=yJcPNVzqNuhKlZkr-1  "Figma"
