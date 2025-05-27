@@ -56,7 +56,7 @@ DishChallenge は、日々の料理をただの作業から楽しみの時間へ
 - **ランキング機能**
 - **称号・ランク機能**
 - **投稿一覧の並び替えや絞り込み**
-- - **パスワードリセット機能**
+- **パスワードリセット機能**
 
 <br />
 
@@ -69,6 +69,27 @@ DishChallenge は、日々の料理をただの作業から楽しみの時間へ
 ## ER図
 
 [ER図][]
+
+<br />
+
+## 技術選定
+
+### フロントエンド　
+
+- React
+- TypeScript
+
+### バックエンド
+- Ruby on Rails
+- ORM : ActiveRecord
+- 認証: has_secure_password
+
+### CSSフレームワーク
+- bootstrap
+- Tailwind CSS
+
+### その他
+- VCS: GitHub
 
 [Figma]: https://www.figma.com/design/gTGn2sVYWR52Eu0nwMl2SG/%E7%84%A1%E9%A1%8C?node-id=0-1&t=yJcPNVzqNuhKlZkr-1  "Figma"
 [ER図]: https://dbdiagram.io/d/6835207f6980ade2eb872699 "ER図"
