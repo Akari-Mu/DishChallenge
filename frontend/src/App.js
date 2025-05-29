@@ -1,17 +1,25 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import Header from './components/Header.tsx'; // ← ここを修正
+import Header from './components/Header.tsx'; 
+import Login from './pages/Login.tsx';
+import NewLogin from './pages/NewLogin.tsx';
+import { AuthProvider } from './contexts/AuthContext.tsx';
 
-function App() {
+const App = () => {
   return (
-    <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </Router>
+    <AuthProvider>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/new" element={<NewLogin />} />
+        </Routes>
+      </Router>
+    </AuthProvider>
   );
-}
+};
+
 
 export default App;
