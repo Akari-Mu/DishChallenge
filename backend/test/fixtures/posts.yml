@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  theme: one
+  title: MyString
+  photograph: MyText
+  body: MyText
+  materias: MyText
+  recipe: MyText
+
+two:
+  user: two
+  theme: two
+  title: MyString
+  photograph: MyText
+  body: MyText
+  materias: MyText
+  recipe: MyText
