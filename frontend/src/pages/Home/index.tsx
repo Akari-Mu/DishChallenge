@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import RecipeCard from '../../components/RecipeCard.tsx';
-import Theme from '../../components/Theme.tsx'; // 先に作ったテーマ表示コンポーネント
+import Theme from './ThemeIndex.tsx';
+
 
 const Home = () => {
   const [themeTitle, setThemeTitle] = useState('');
@@ -33,10 +34,11 @@ const Home = () => {
       {/* お題コンポーネント */}
       <Theme title={themeTitle} />
 
+
       {/* レシピ一覧 */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {recipes.map((recipe, i) => (
-          <RecipeCard key={i} {...recipe} />
+          <RecipeCard  {...recipe} />
         ))}
       </div>
     </div>

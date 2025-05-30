@@ -1,10 +1,11 @@
 import React from 'react';
 import logo from '../assets/header.jpeg';
-import { Link } from 'react-router-dom'; 
+import { Link, useNavigate } from 'react-router-dom'; 
 import { useAuth } from '../contexts/AuthContext.tsx';
 
 const Header = () => {
   const { user, setUser } = useAuth();
+  const navigate = useNavigate();
 
   const handleLogout = async () => {
     try {
@@ -14,6 +15,7 @@ const Header = () => {
       });
       if (res.ok) {
         setUser(null);
+        navigate('/');
       }
     } catch (err) {
       console.error('ログアウト失敗', err);

@@ -4,9 +4,9 @@ module Api
       def published
         theme = Theme.published.first
         if theme
-          render json: { title: theme.title }
+          render json: { id: theme.id, title: theme.title }
         else
-          render json: { title: nil }, status: :not_found
+          render json: { id: nil, title: nil }, status: :not_found
         end
       end
     end

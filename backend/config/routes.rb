@@ -15,6 +15,7 @@ Rails.application.routes.draw do
       post 'newlogin', to: 'newusers#create'
       delete 'logout', to: 'sessions#destroy'
       get 'me', to: 'users#me'
+      resources :posts, only: [:create]
     end
   end
 
